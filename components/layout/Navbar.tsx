@@ -34,7 +34,7 @@ export default function Navbar() {
 
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 relative z-[60]" onClick={() => setIsMobileMenuOpen(false)}>
-                        <img src="/logo.svg" alt="Wevans Global" className="h-11 w-11 object-contain" />
+                        <img src="/logo.jpg" alt="Wevans Global" className="h-11 w-11 object-contain" />
                         <span className="font-serif text-2xl text-cream tracking-wide">
                             Wevans <span className="text-gold">Global</span>
                         </span>
