@@ -3,13 +3,12 @@ import { motion } from 'framer-motion';
 import SectionHeader from '../shared/SectionHeader';
 import { WHY_FEATURES } from '@/lib/constants';
 
-import { Target, MessageSquare, Smartphone, Star } from 'lucide-react';
 
 const staggeredCards = [
-    { icon: Target, title: 'Goal-Oriented', desc: 'We align our services to your personal and business objectives' },
-    { icon: MessageSquare, title: 'Expert Guidance', desc: 'Our team brings deep industry knowledge to every client interaction' },
-    { icon: Smartphone, title: 'Always Accessible', desc: 'Reach us online, by phone, or in person. We\'re here when you need us' },
-    { icon: Star, title: 'Client-First', desc: 'Your success is the metric we measure ourselves by' },
+    { title: 'Goal-Oriented', desc: 'We align our services to your personal and business objectives' },
+    { title: 'Expert Guidance', desc: 'Our team brings deep industry knowledge to every client interaction' },
+    { title: 'Always Accessible', desc: 'Reach us online, by phone, or in person. We\'re here when you need us' },
+    { title: 'Client-First', desc: 'Your success is the metric we measure ourselves by' },
 ];
 
 export default function WhyUs() {
@@ -60,9 +59,6 @@ export default function WhyUs() {
                             className={`p-9 bg-[#0D0A0B] border border-white/5 hover:border-gold/30 transition-all duration-300 ${index === 1 ? 'sm:mt-12' : index === 3 ? 'sm:-mt-12' : ''
                                 }`}
                         >
-                            <div className="mb-4 text-gold">
-                                <card.icon size={40} strokeWidth={1.2} />
-                            </div>
                             <h4 className="font-serif text-2xl font-semibold text-cream mb-3">{card.title}</h4>
                             <p className="font-sans text-white/50 text-[14px] leading-relaxed">{card.desc}</p>
                         </motion.div>

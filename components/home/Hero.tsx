@@ -57,7 +57,7 @@ export default function Hero() {
                     </motion.div>
 
                     {/* Right Column */}
-                    <div className="flex flex-col items-center justify-center lg:items-end w-full relative">
+                    <div className="hidden md:flex flex-col items-center justify-center lg:items-end w-full relative">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
