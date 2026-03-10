@@ -38,9 +38,14 @@ export default function Leadership() {
                     transition={{ duration: 0.7 }}
                     className="bg-surface border border-gold/20 overflow-hidden"
                 >
-                    <div className="relative h-72 md:h-80 overflow-hidden bg-surface flex items-center justify-center">
-                        <div className="text-white/20 text-sm uppercase tracking-widest">Photo Coming Soon</div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent" />
+                    <div className="relative h-72 md:h-80 overflow-hidden">
+                        <Image
+                            src="/CEO.png"
+                            alt="Samuel Evans Weli - CEO"
+                            fill
+                            className="object-fit object-top"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
                     </div>
                     <div className="p-8">
                         <h3 className="font-serif text-3xl font-semibold text-cream">Samuel Evans Weli</h3>
