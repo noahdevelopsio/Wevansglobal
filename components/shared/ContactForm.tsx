@@ -17,9 +17,33 @@ export default function ContactForm() {
     const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>();
 
     const onSubmit = async (data: FormData) => {
-        // Simulate API call delay naturally
-        await new Promise(resolve => setTimeout(resolve, 800));
-        setSuccess(true);
+        try {
+            // Append the Web3Forms access key
+            const submissionData = {
+                ...data,
+                access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+            };
+
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: JSON.stringify(submissionData)
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                setSuccess(true);
+            } else {
+                console.error("Form submission failed", result);
+                alert("Something went wrong. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error submitting form", error);
+            alert("Something went wrong. Please try again later.");
+        }
     };
 
     if (success) {
