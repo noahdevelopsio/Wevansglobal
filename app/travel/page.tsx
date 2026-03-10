@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import SectionHeader from '@/components/shared/SectionHeader';
 import Button from '@/components/shared/Button';
 import { MapPin, Star } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: 'Travel & Tour Services',
@@ -22,12 +23,12 @@ const travelServices = [
 ];
 
 const destinations = [
-    { name: 'Dubai', flag: '🇦🇪' },
-    { name: 'London', flag: '🇬🇧' },
-    { name: 'Paris', flag: '🇫🇷' },
-    { name: 'Cape Town', flag: '🇿🇦' },
-    { name: 'Abuja', flag: '🇳🇬' },
-    { name: 'Lagos', flag: '🇳🇬' },
+    { name: 'Dubai', flag: '🇦🇪', image: 'https://images.pexels.com/photos/1470405/pexels-photo-1470405.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+    { name: 'London', flag: '🇬🇧', image: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+    { name: 'Paris', flag: '🇫🇷', image: 'https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+    { name: 'Cape Town', flag: '🇿🇦', image: 'https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+    { name: 'Abuja', flag: '🇳🇬', image: 'https://images.pexels.com/photos/4577718/pexels-photo-4577718.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
+    { name: 'Lagos', flag: '🇳🇬', image: 'https://images.pexels.com/photos/5439375/pexels-photo-5439375.jpeg?auto=compress&cs=tinysrgb&w=600&h=400' },
 ];
 
 const testimonials = [
@@ -40,6 +41,13 @@ export default function TravelPage() {
     return (
         <main className="bg-[#0D0A0B] min-h-screen">
             <section className="relative pt-40 pb-24 px-6 md:px-16 overflow-hidden border-b border-white/5 bg-gradient-to-b from-maroon/10 to-[#0D0A0B]">
+                <Image
+                    src="https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                    alt="Travel"
+                    fill
+                    className="object-cover opacity-25 pointer-events-none"
+                    priority
+                />
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
                 <div className="max-w-[1280px] mx-auto relative z-10 text-center">
                     <SectionHeader
@@ -68,13 +76,24 @@ export default function TravelPage() {
             <section className="py-24 px-6 md:px-16 bg-surface border-y border-white/5">
                 <div className="max-w-[1280px] mx-auto text-center">
                     <h2 className="font-serif text-4xl text-cream mb-12">Popular Destinations</h2>
-                    <div className="flex flex-wrap justify-center gap-4">
+                    <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                         {destinations.map(dest => (
-                            <div key={dest.name} className="flex items-center gap-3 px-6 py-4 bg-[#0D0A0B] border border-white/5 hover:border-maroon/40 transition-colors">
-                                <div className="text-gold">
-                                    <MapPin size={24} strokeWidth={1.5} />
+                            <div key={dest.name} className="relative w-[180px] h-[120px] md:w-[220px] md:h-[140px] border border-white/5 hover:border-maroon/40 transition-colors overflow-hidden group">
+                                <Image
+                                    src={dest.image}
+                                    alt={dest.name}
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(to top, rgba(13,10,11,0.92) 0%, rgba(13,10,11,0.3) 50%, transparent 100%)' }} />
+
+                                <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between">
+                                    <div className="flex items-center gap-2 text-cream">
+                                        <MapPin size={16} strokeWidth={1.5} className="text-gold" />
+                                        <span className="font-sans font-medium text-[15px]">{dest.name}</span>
+                                    </div>
+                                    <span>{dest.flag}</span>
                                 </div>
-                                <span className="font-sans font-medium text-cream">{dest.name}</span>
                             </div>
                         ))}
                     </div>

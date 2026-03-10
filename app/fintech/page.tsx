@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import SectionHeader from '@/components/shared/SectionHeader';
 import Button from '@/components/shared/Button';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: 'Fintech & Investment Services',
@@ -24,6 +25,13 @@ export default function FintechPage() {
     return (
         <main className="bg-[#0D0A0B] min-h-screen">
             <section className="relative pt-40 pb-24 px-6 md:px-16 overflow-hidden border-b border-white/5 bg-gradient-to-b from-maroon/10 to-[#0D0A0B]">
+                <Image
+                    src="https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                    alt="Fintech Trading"
+                    fill
+                    className="object-cover opacity-15 pointer-events-none"
+                    priority
+                />
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
                 <div className="max-w-[1280px] mx-auto relative z-10 text-center">
                     <SectionHeader

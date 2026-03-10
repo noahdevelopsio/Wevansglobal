@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import SectionHeader from '@/components/shared/SectionHeader';
 import Button from '@/components/shared/Button';
 import { CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: 'Recruitment & Job Placement',
@@ -18,7 +19,14 @@ export default function RecruitmentPage() {
     return (
         <main className="bg-[#0D0A0B] min-h-screen">
             <section className="relative pt-40 pb-24 px-6 md:px-16 overflow-hidden border-b border-white/5">
-                <div className="max-w-[1280px] mx-auto text-center">
+                <Image
+                    src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+                    alt="Team Collaboration"
+                    fill
+                    className="object-cover opacity-15 pointer-events-none"
+                    priority
+                />
+                <div className="max-w-[1280px] mx-auto relative z-10 text-center">
                     <SectionHeader
                         eyebrow="RECRUITMENT SERVICES"
                         title="Your Career. *Our Mission.*"
