@@ -51,8 +51,22 @@ export default function ContactPage() {
                                     <MapPin size={24} strokeWidth={1.5} />
                                 </div>
                                 <div>
-                                    <span className="block text-cream font-medium mb-1">Visit Us</span>
-                                    <span className="leading-relaxed">{CONTACT.location}<br />Offices in Lagos / Port Harcourt</span>
+                                    <span className="block text-cream font-medium mb-1">Headquarters</span>
+                                    <span className="leading-relaxed">500104 Port Harcourt, Rivers State, Nigeria</span>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-4">
+                                <div className="text-gold mt-0.5">
+                                    <MapPin size={24} strokeWidth={1.5} />
+                                </div>
+                                <div>
+                                    <span className="block text-cream font-medium mb-2">Other Offices</span>
+                                    <ul className="space-y-1.5 leading-relaxed">
+                                        <li>WG, Plot 12 Bank Road, Umuahia, Abia State</li>
+                                        <li>WG, Alvan Ikoku Road, Owerri, Imo State</li>
+                                        <li>WG, Lugbe, Abuja, FCT</li>
+                                        <li>Lagos State</li>
+                                    </ul>
                                 </div>
                             </li>
                         </ul>
