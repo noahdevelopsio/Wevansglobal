@@ -20,7 +20,7 @@ export default function Footer() {
                     {/* Brand Col */}
                     <div className="flex flex-col items-start">
                         <Link href="/" className="flex items-center gap-3 mb-6">
-                            <img src="/logo.jpg" alt="Wevans Global" className="h-14 w-14 object-contain" />
+                            <img src="/logo.png" alt="Wevans Global" className="h-14 w-14 object-contain" />
                             <span className="font-serif text-2xl text-cream tracking-wide">
                                 Wevans <span className="text-gold">Global</span>
                             </span>

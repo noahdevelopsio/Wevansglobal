@@ -69,7 +69,7 @@ export default function Hero() {
                             <div className="absolute inset-16 border border-maroon/20 rounded-full animate-spin-fast" />
 
                             <div className="relative w-[180px] h-[180px] bg-surface flex items-center justify-center z-10 shadow-[0_0_40px_rgba(107,15,26,0.3)] border border-white/5">
-                                <img src="/logo.jpg" alt="Wevans Logo" className="w-[120px] h-[120px] object-contain rounded-xl" />
+                                <img src="/logo.png" alt="Wevans Logo" className="w-[120px] h-[120px] object-contain rounded-xl" />
                             </div>
                         </motion.div>
 
