@@ -17,7 +17,7 @@ export const SERVICES = [
         icon: LineChart,
         name: 'Fintech',
         href: '/fintech',
-        description: 'We deliver powerful financial tools — from trading platforms to investment guidance — helping you grow and protect your wealth in a dynamic global market.',
+        description: 'We deliver powerful financial tools, from trading platforms to investment guidance, helping you grow and protect your wealth in a dynamic global market.',
         tags: ['Trading', 'Investment', 'Financial Advisory', 'Forex'],
     },
     {
@@ -33,7 +33,7 @@ export const SERVICES = [
         icon: Plane,
         name: 'Travel & Tour',
         href: '/travel',
-        description: 'From visa processing to curated tour packages, we handle every detail of your journey — making international and local travel stress-free and memorable.',
+        description: 'From visa processing to curated tour packages, we handle every detail of your journey, making international and local travel stress-free and memorable.',
         tags: ['Visa Processing', 'Tour Packages', 'Flight Booking', 'Hotel'],
     },
 ];

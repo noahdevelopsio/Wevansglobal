@@ -16,7 +16,7 @@ const fintechServices = [
     { title: 'Investment Advisory', desc: 'Tailored investment strategies built around your financial goals, risk tolerance, and timeline' },
     { title: 'Trading Education', desc: 'Structured courses and one-on-one mentorship for traders at every level' },
     { title: 'Portfolio Management', desc: 'Let our experts actively grow and protect your asset portfolio' },
-    { title: 'Financial Planning', desc: 'Map your financial future with clarity — retirement, savings, and wealth-building plans' },
+    { title: 'Financial Planning', desc: 'Map your financial future with clarity: retirement, savings, and wealth-building plans' },
     { title: 'Crypto & Digital Assets', desc: 'Navigate the digital asset market safely with our guidance and market insights' },
 ];
 
@@ -29,7 +29,7 @@ export default function FintechPage() {
                     <SectionHeader
                         eyebrow="FINTECH SERVICES"
                         title="Trade Smarter. *Invest Wiser.*"
-                        subtitle="Wevans Global provides the tools, guidance, and platforms to help you navigate global financial markets with confidence — whether you're a beginner or an experienced investor."
+                        subtitle="Wevans Global provides the tools, guidance, and platforms to help you navigate global financial markets with confidence, whether you're a beginner or an experienced investor."
                         centered={true}
                     />
                 </div>

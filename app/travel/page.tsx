@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const travelServices = [
-    { title: 'Visa Processing', desc: 'UK, Schengen, UAE, US, Canada & more — we handle the paperwork, you pack your bags' },
+    { title: 'Visa Processing', desc: 'UK, Schengen, UAE, US, Canada & more. We handle the paperwork, you pack your bags' },
     { title: 'Flight Booking', desc: 'Best-price airfare with flexible options across major airlines worldwide' },
     { title: 'Hotel Reservations', desc: 'Carefully vetted accommodations to suit every budget and preference' },
     { title: 'Tour Packages', desc: 'Curated group and private tours both locally and internationally' },
@@ -45,7 +45,7 @@ export default function TravelPage() {
                     <SectionHeader
                         eyebrow="TRAVEL & TOUR"
                         title="Explore the World *Stress-Free.*"
-                        subtitle="From visa applications to fully managed tour packages, Wevans Global takes care of every step of your journey — so you can focus on the experience."
+                        subtitle="From visa applications to fully managed tour packages, Wevans Global takes care of every step of your journey, so you can focus on the experience."
                         centered={true}
                     />
                 </div>

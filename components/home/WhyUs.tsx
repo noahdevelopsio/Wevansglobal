@@ -8,7 +8,7 @@ import { Target, MessageSquare, Smartphone, Star } from 'lucide-react';
 const staggeredCards = [
     { icon: Target, title: 'Goal-Oriented', desc: 'We align our services to your personal and business objectives' },
     { icon: MessageSquare, title: 'Expert Guidance', desc: 'Our team brings deep industry knowledge to every client interaction' },
-    { icon: Smartphone, title: 'Always Accessible', desc: 'Reach us online, by phone, or in person — we\'re here when you need us' },
+    { icon: Smartphone, title: 'Always Accessible', desc: 'Reach us online, by phone, or in person. We\'re here when you need us' },
     { icon: Star, title: 'Client-First', desc: 'Your success is the metric we measure ourselves by' },
 ];
 
@@ -22,7 +22,7 @@ export default function WhyUs() {
                     <SectionHeader
                         eyebrow="WHY WEVANS GLOBAL"
                         title="A Partner You Can *Trust*"
-                        subtitle="With years of experience across finance, human capital, and travel, Wevans Global has built a reputation for reliability, transparency, and results. We don't just offer services — we deliver transformation."
+                        subtitle="With years of experience across finance, human capital, and travel, Wevans Global has built a reputation for reliability, transparency, and results. We don't just offer services; we deliver transformation."
                     />
 
                     <ul className="flex flex-col gap-2 mt-8">

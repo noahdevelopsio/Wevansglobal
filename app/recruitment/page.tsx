@@ -22,7 +22,7 @@ export default function RecruitmentPage() {
                     <SectionHeader
                         eyebrow="RECRUITMENT SERVICES"
                         title="Your Career. *Our Mission.*"
-                        subtitle="We connect the right people with the right opportunities — bridging talent and employers across Nigeria and the global job market."
+                        subtitle="We connect the right people with the right opportunities, bridging talent and employers across Nigeria and the global job market."
                         centered={true}
                     />
                 </div>
@@ -48,7 +48,7 @@ export default function RecruitmentPage() {
 
                     <div className="bg-surface border border-white/5 p-10 md:p-14 hover:border-maroon/30 transition-colors">
                         <h3 className="font-serif text-[32px] text-gold mb-4">For Employers</h3>
-                        <p className="text-secondary mb-8">Find the talent that drives your business forward — fast, efficiently, and reliably.</p>
+                        <p className="text-secondary mb-8">Find the talent that drives your business forward: fast, efficiently, and reliably.</p>
                         <ul className="flex flex-col gap-4 text-cream">
                             {['Talent Sourcing & Headhunting', 'Candidate Screening & Shortlisting', 'HR Consulting & Advisory', 'Onboarding Support'].map(item => (
                                 <li key={item} className="flex items-center gap-3">
