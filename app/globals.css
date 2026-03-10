@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-maroon: #6B0F1A;
+  --color-maroon-light: #8B1A28;
+  --color-maroon-dark: #4A0A12;
+  --color-gold: #C9A84C;
+  --color-gold-light: #E4C97A;
+  --color-gold-dim: #A0803A;
+  --color-cream: #F5F0E8;
+  --color-surface: #1A1215;
+  --color-elevated: #2D2022;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-display: var(--font-bebas-neue, "Bebas Neue"), sans-serif;
+  --font-serif: var(--font-cormorant-garamond, "Cormorant Garamond"), serif;
+  --font-sans: var(--font-dm-sans, "DM Sans"), sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-marquee: marqueeScroll 25s linear infinite;
+  --animate-spin-slow: spin 25s linear infinite;
+  --animate-spin-medium: spin 18s linear infinite;
+  --animate-spin-fast: spin 12s linear infinite;
+
+  @keyframes marqueeScroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --maroon: #6B0F1A;
+  --gold: #C9A84C;
+  --cream: #F5F0E8;
 }
+
+body {
+  background-color: #0D0A0B;
+  color: #F5F0E8;
+  font-family: var(--font-sans);
+}
+
+.text-stroke-maroon {
+  -webkit-text-stroke: 1px #8B1A28;
+  color: transparent;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0D0A0B; }
+::-webkit-scrollbar-thumb { background: #6B0F1A; border-radius: 3px; }
