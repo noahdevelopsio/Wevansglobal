@@ -8,7 +8,8 @@ import {
     Award,
     Mail,
     Phone,
-    MapPin
+    MapPin,
+    Building2
 } from 'lucide-react';
 
 export const SERVICES = [
@@ -46,6 +47,7 @@ export const STATS = [
 
 export const NAV_LINKS = [
     { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
     { label: 'Fintech', href: '/fintech' },
     { label: 'Recruitment', href: '/recruitment' },
     { label: 'Travel', href: '/travel' },
@@ -54,8 +56,8 @@ export const NAV_LINKS = [
 
 export const CONTACT = {
     email: 'info@wevansglobal.com',
-    phone: '+234 000 000 0000',
-    location: 'Nigeria',
+    phone: '+2348160592607',
+    location: 'Port Harcourt, Rivers State',
     facebook: 'https://web.facebook.com/profile.php?id=100066593572733',
 };
 
@@ -64,4 +66,23 @@ export const WHY_FEATURES = [
     { icon: ShieldCheck, title: 'Secure & Transparent', desc: 'Every transaction and process is handled with complete integrity' },
     { icon: Zap, title: 'Fast Turnaround', desc: 'From consultation to delivery, we move with purpose and speed' },
     { icon: Award, title: 'Proven Results', desc: 'Hundreds of success stories across fintech, recruitment, and travel' },
+];
+
+export const OFFICES = [
+    { city: 'Port Harcourt', state: 'Rivers State', address: '500102 Port Harcourt, Rivers State', isHQ: true },
+    { city: 'Umuahia', state: 'Abia State', address: 'WG, Plot 12 Bank Road, Umuahia, Abia State', isHQ: false },
+    { city: 'Owerri', state: 'Imo State', address: 'WG, Alvan Ikoku Road, Owerri, Imo State', isHQ: false },
+    { city: 'Abuja', state: 'FCT', address: 'WG, Lugbe, Abuja', isHQ: false },
+];
+
+export const REGISTRATION_DATA = [
+    { label: 'Full Company Name', value: 'Wevans Global Ltd' },
+    { label: 'Registration Number', value: 'RC 1437708' },
+    { label: 'Date of Incorporation', value: 'September 12, 2017' },
+    { label: 'Legal Structure', value: 'Private Company Limited by Shares' },
+    { label: 'Incorporating Act', value: 'Companies and Allied Matters Act 1990' },
+    { label: 'Registrar', value: 'Corporate Affairs Commission (CAC)' },
+    { label: 'Registrar General', value: 'Bello Mahmud' },
+    { label: 'Status', value: 'Active' },
+    { label: 'Headquarters', value: 'Port Harcourt, Rivers State, Nigeria' },
 ];

@@ -5,7 +5,7 @@ import { CONTACT, NAV_LINKS, SERVICES } from '@/lib/constants';
 export default function Footer() {
     const serviceLinks = SERVICES.map(s => ({ label: s.name, href: s.href }));
     const companyLinksOverride = [
-        { label: 'About Us', href: '/#about' },
+        { label: 'About Us', href: '/about' },
         { label: 'Why Us', href: '/#why-us' },
         { label: 'Testimonials', href: '/travel#testimonials' },
         { label: 'Contact', href: '/contact' },
@@ -96,7 +96,7 @@ export default function Footer() {
                                 <div className="text-gold mt-1">
                                     <MapPin size={18} strokeWidth={1.5} />
                                 </div>
-                                <span className="leading-snug">{CONTACT.location}<br />Offices in Lagos / Port Harcourt</span>
+                                <span className="leading-snug">{CONTACT.location}<br />Offices in Umuahia, Owerri & Abuja</span>
                             </li>
                         </ul>
                     </div>
@@ -106,7 +106,7 @@ export default function Footer() {
                 <hr className="border-white/[0.06] mb-8" />
 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted font-sans uppercase tracking-wider">
-                    <p>© {new Date().getFullYear()} Wevans Global. All Rights Reserved.</p>
+                    <p>© {new Date().getFullYear()} Wevans Global Ltd · RC 1437708. All Rights Reserved.</p>
                     <div className="flex gap-6">
                         <button className="hover:text-cream transition-colors" type="button">Privacy Policy</button>
                         <button className="hover:text-cream transition-colors" type="button">Terms of Service</button>
