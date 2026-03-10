@@ -4,8 +4,12 @@ import Button from '@/components/shared/Button';
 import { CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Wevans Global Recruitment — Job Placement & Talent Solutions',
-    description: 'Connecting top talent with global employers across all industries',
+    title: 'Recruitment & Job Placement',
+    description: 'Connecting top talent with global employers across all industries. Professional CV reviews, job matching, and talent sourcing.',
+    openGraph: {
+        title: 'Recruitment & Job Placement | Wevans Global',
+        description: 'Find opportunity or find talent. Whether you are hiring or job-seeking, Wevans Global connects you with the right fit.',
+    }
 };
 
 const industries = ['Oil & Gas', 'Healthcare', 'Technology', 'Banking & Finance', 'Hospitality', 'Construction', 'Education', 'NGO/Nonprofit', 'Manufacturing', 'Logistics'];

@@ -3,8 +3,12 @@ import SectionHeader from '@/components/shared/SectionHeader';
 import Button from '@/components/shared/Button';
 
 export const metadata: Metadata = {
-    title: 'Wevans Global Fintech — Trading & Investment Services',
-    description: 'Expert forex trading, investment advisory, and financial planning services',
+    title: 'Fintech & Investment Services',
+    description: 'Expert financial advisory, forex trading, and asset management. Navigate global financial markets with confidence and secure your future.',
+    openGraph: {
+        title: 'Fintech & Investment Services | Wevans Global',
+        description: 'Empowering your wealth with expert trading strategies and investment portfolios.',
+    }
 };
 
 const fintechServices = [

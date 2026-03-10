@@ -23,8 +23,38 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Wevans Global — Fintech, Recruitment & Travel",
-  description: "Multi-service company offering financial solutions, recruitment, and travel services in Nigeria and beyond",
+  title: {
+    template: "%s | Wevans Global",
+    default: "Wevans Global | Fintech, Recruitment & Travel",
+  },
+  description: "Multi-service company offering financial solutions, recruitment, and travel services in Nigeria and beyond. We build global futures through seamless operations.",
+  keywords: ["Wevans Global", "Fintech Nigeria", "Recruitment Agency", "Travel and Tour", "Job Placement", "Visa Processing", "Investment Advisory"],
+  authors: [{ name: "Wevans Global" }],
+  creator: "Wevans Global",
+  openGraph: {
+    type: "website",
+    locale: "en_NG",
+    url: "https://wevansglobal.com",
+    title: "Wevans Global | Fintech, Recruitment & Travel",
+    description: "Building Global Futures through Fintech, Recruitment, and seamless Travel. Discover our premium services.",
+    siteName: "Wevans Global",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wevans Global",
+    description: "Building Global Futures through Fintech, Recruitment, and seamless Travel.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

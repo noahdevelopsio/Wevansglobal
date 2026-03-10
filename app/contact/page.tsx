@@ -5,8 +5,12 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 import { CONTACT } from '@/lib/constants';
 
 export const metadata: Metadata = {
-    title: 'Contact Wevans Global',
-    description: 'Get in touch with our team for inquiries about any of our services',
+    title: 'Contact Us',
+    description: 'Get in touch with the Wevans Global team for inquiries about fintech, recruitment, or travel services.',
+    openGraph: {
+        title: 'Contact Us | Wevans Global',
+        description: 'Have questions? Ready to get started? Reach out to Wevans Global through email, phone, or visit our offices.',
+    }
 };
 
 export default function ContactPage() {

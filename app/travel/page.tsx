@@ -4,8 +4,12 @@ import Button from '@/components/shared/Button';
 import { MapPin, Star } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Wevans Global Travel — Visa Processing & Tour Packages',
-    description: 'Stress-free travel planning: visas, flights, hotels, and curated tours',
+    title: 'Travel & Tour Services',
+    description: 'Stress-free travel planning: visa processing, flights, hotel reservations, and curated tour packages for individuals and groups.',
+    openGraph: {
+        title: 'Travel & Tour Services | Wevans Global',
+        description: 'Explore the world stress-free. From visa applications to fully managed tour packages, Wevans Global takes care of every step of your journey.',
+    }
 };
 
 const travelServices = [
