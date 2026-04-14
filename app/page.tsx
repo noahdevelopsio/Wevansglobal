@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <MarqueeBand />
       <Services />
       <WhyUs />
       <CtaBand />
